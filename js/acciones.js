@@ -56,13 +56,13 @@ var watchID = navigator.geolocation.watchPosition(onSuccess, onError, options);
 function onSuccess(position){
 	
 	$('#latitud').html(position.coords.latitude)
-	$('#longitud').html(position.coords.latitude);
-	$('#altitud').html(position.coords.latitude);
-	$('#accuracy').html(position.coords.latitude);
-	$('#aaccuracy').html(position.coords.latitude);
-	$('#headingg').html(position.coords.latitude);
-	$('#speed').html(position.coords.latitude);
-	$('#timestamp').html(position.coords.latitude);
+	$('#longitud').html(position.coords.longitude);
+	$('#altitud').html(position.coords.altitude);
+	$('#accuracy').html(position.coords.accuracy);
+	$('#aaccuracy').html(position.coords.altitudeaccucary);
+	$('#headingg').html(position.coords.heading);
+	$('#speed').html(position.coords.speed);
+	$('#timestamp').html(position.coords.timestamp);
 };
 
 function onError(error){
