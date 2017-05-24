@@ -59,10 +59,10 @@ function onSuccess(position){
 	$('#longitud').html(position.coords.longitude);
 	$('#altitud').html(position.coords.altitude);
 	$('#accuracy').html(position.coords.accuracy);
-	$('#aaccuracy').html(position.coords.altitudeaccucary);
+	$('#aaccuracy').html(position.coords.altitudeAccucary);
 	$('#headingg').html(position.coords.heading);
 	$('#speed').html(position.coords.speed);
-	$('#timestamp').html(position.coords.timestamp);
+	$('#timestamp').html(position.timestamp);
 };
 
 function onError(error){
